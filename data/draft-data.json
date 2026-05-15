@@ -1,0 +1,364 @@
+{
+  "weights": {
+    "meta": 35,
+    "counter": 30,
+    "synergy": 20,
+    "role": 10,
+    "needs": 5
+  },
+  "matchups": {
+    "axe": {
+      "phantom_assassin": 8,
+      "phantom_lancer": 7,
+      "slark": 5,
+      "anti_mage": 4,
+      "drow_ranger": -3
+    },
+    "ancient_apparition": {
+      "necrophos": 8,
+      "huskar": 8,
+      "alchemist": 6,
+      "warlock": 4
+    },
+    "bane": {
+      "storm_spirit": 5,
+      "puck": 4,
+      "faceless_void": 4,
+      "phantom_assassin": 3
+    },
+    "batrider": {
+      "sniper": 7,
+      "drow_ranger": 6,
+      "medusa": 5,
+      "shadow_fiend": 4,
+      "abaddon": -5,
+      "oracle": -6
+    },
+    "crystal_maiden": {
+      "phantom_lancer": 3,
+      "slark": -5,
+      "spirit_breaker": -4
+    },
+    "disruptor": {
+      "storm_spirit": 8,
+      "ember_spirit": 7,
+      "queen_of_pain": 6,
+      "anti_mage": 5,
+      "puck": 4
+    },
+    "dragon_knight": {
+      "puck": 4,
+      "queen_of_pain": 3,
+      "timbersaw": -6,
+      "viper": -5
+    },
+    "drow_ranger": {
+      "medusa": 4,
+      "luna": 3,
+      "spirit_breaker": -6,
+      "batrider": -6,
+      "phantom_assassin": -5
+    },
+    "earthshaker": {
+      "phantom_lancer": 8,
+      "natures_prophet": 5,
+      "meepo": 7,
+      "faceless_void": 3
+    },
+    "ember_spirit": {
+      "crystal_maiden": 5,
+      "shadow_shaman": 4,
+      "disruptor": -7,
+      "bane": -5,
+      "lion": -4
+    },
+    "enigma": {
+      "phantom_lancer": 5,
+      "naga_siren": 5,
+      "rubick": -8,
+      "silencer": -7,
+      "vengeful_spirit": -6
+    },
+    "faceless_void": {
+      "sniper": 7,
+      "drow_ranger": 6,
+      "zeus": 5,
+      "oracle": -5,
+      "vengeful_spirit": -4
+    },
+    "hoodwink": {
+      "bristleback": 7,
+      "phantom_assassin": 4,
+      "abaddon": -3
+    },
+    "huskar": {
+      "zeus": 5,
+      "queen_of_pain": 4,
+      "ancient_apparition": -8,
+      "viper": -7,
+      "necrophos": -6
+    },
+    "invoker": {
+      "medusa": 5,
+      "faceless_void": 4,
+      "puck": -4,
+      "night_stalker": -5
+    },
+    "juggernaut": {
+      "crystal_maiden": 4,
+      "lion": 3,
+      "bane": -4,
+      "axe": -5
+    },
+    "legion_commander": {
+      "drow_ranger": 6,
+      "sniper": 6,
+      "puck": -5,
+      "oracle": -6
+    },
+    "lion": {
+      "storm_spirit": 6,
+      "ember_spirit": 5,
+      "anti_mage": 4,
+      "phantom_lancer": -3
+    },
+    "luna": {
+      "phantom_lancer": 4,
+      "chaos_knight": 4,
+      "axe": -4,
+      "spectre": -3
+    },
+    "magnus": {
+      "drow_ranger": 5,
+      "sniper": 5,
+      "rubick": -5,
+      "vengeful_spirit": -4
+    },
+    "mars": {
+      "sniper": 6,
+      "drow_ranger": 5,
+      "lifestealer": -4,
+      "slark": -4
+    },
+    "medusa": {
+      "phantom_assassin": 5,
+      "faceless_void": 4,
+      "anti_mage": -8,
+      "invoker": -5
+    },
+    "monkey_king": {
+      "melee_core": 4,
+      "mars": 4,
+      "batrider": -5,
+      "beastmaster": -4
+    },
+    "necrophos": {
+      "bristleback": 7,
+      "huskar": 6,
+      "spectre": 4,
+      "ancient_apparition": -8
+    },
+    "night_stalker": {
+      "puck": 7,
+      "storm_spirit": 5,
+      "zeus": 5,
+      "drow_ranger": 4
+    },
+    "oracle": {
+      "legion_commander": 8,
+      "batrider": 7,
+      "faceless_void": 5,
+      "ancient_apparition": -6
+    },
+    "phantom_lancer": {
+      "sniper": 6,
+      "drow_ranger": 4,
+      "axe": -8,
+      "earthshaker": -8,
+      "sven": -5
+    },
+    "phoenix": {
+      "melee_core": 4,
+      "faceless_void": 4,
+      "snapfire": -5,
+      "lina": -4
+    },
+    "primal_beast": {
+      "sniper": 7,
+      "zeus": 6,
+      "drow_ranger": 5,
+      "bane": -5
+    },
+    "puck": {
+      "dragon_knight": 5,
+      "mars": 4,
+      "night_stalker": -7,
+      "disruptor": -4
+    },
+    "queen_of_pain": {
+      "sniper": 5,
+      "shadow_fiend": 4,
+      "disruptor": -6,
+      "night_stalker": -5
+    },
+    "shadow_shaman": {
+      "anti_mage": 4,
+      "storm_spirit": 4,
+      "juggernaut": -3
+    },
+    "slark": {
+      "bristleback": 5,
+      "axe": -5,
+      "bloodseeker": -7,
+      "disruptor": -6
+    },
+    "spectre": {
+      "zeus": 6,
+      "sniper": 5,
+      "drow_ranger": 4,
+      "phantom_lancer": -4
+    },
+    "spirit_breaker": {
+      "sniper": 8,
+      "zeus": 6,
+      "drow_ranger": 6,
+      "oracle": -3
+    },
+    "storm_spirit": {
+      "sniper": 5,
+      "zeus": 4,
+      "disruptor": -8,
+      "lion": -6,
+      "bane": -5
+    },
+    "sven": {
+      "phantom_lancer": 6,
+      "naga_siren": 5,
+      "medusa": -4,
+      "ursa": -5
+    },
+    "tidehunter": {
+      "phantom_assassin": 4,
+      "drow_ranger": 3,
+      "slark": -4,
+      "ursa": -5
+    },
+    "tiny": {
+      "sniper": 6,
+      "zeus": 5,
+      "drow_ranger": 4,
+      "viper": -4
+    },
+    "ursa": {
+      "bristleback": 7,
+      "tidehunter": 6,
+      "medusa": 4,
+      "shadow_demon": -5,
+      "bane": -4
+    },
+    "viper": {
+      "huskar": 8,
+      "dragon_knight": 6,
+      "bristleback": 5,
+      "phantom_lancer": -4
+    },
+    "warlock": {
+      "teamfight": 4,
+      "ancient_apparition": -5
+    },
+    "zeus": {
+      "phantom_lancer": 4,
+      "natures_prophet": 4,
+      "spectre": -6,
+      "storm_spirit": -4
+    }
+  },
+  "synergies": {
+    "faceless_void": {
+      "invoker": 8,
+      "phoenix": 7,
+      "witch_doctor": 6,
+      "ancient_apparition": 5
+    },
+    "magnus": {
+      "juggernaut": 8,
+      "phantom_assassin": 7,
+      "sven": 7,
+      "faceless_void": 4
+    },
+    "dark_seer": {
+      "spirit_breaker": 7,
+      "earthshaker": 6,
+      "primal_beast": 6,
+      "faceless_void": 5
+    },
+    "grimstroke": {
+      "lion": 7,
+      "doom": 6,
+      "legion_commander": 6,
+      "spirit_breaker": 5
+    },
+    "oracle": {
+      "huskar": 8,
+      "slark": 5,
+      "phantom_assassin": 5,
+      "ursa": 4
+    },
+    "shadow_shaman": {
+      "drow_ranger": 5,
+      "luna": 5,
+      "juggernaut": 4
+    },
+    "vengeful_spirit": {
+      "drow_ranger": 7,
+      "luna": 6,
+      "sniper": 5
+    },
+    "crystal_maiden": {
+      "juggernaut": 5,
+      "ursa": 4,
+      "phantom_assassin": 4
+    },
+    "bane": {
+      "mirana": 8,
+      "lina": 5,
+      "shadow_fiend": 4
+    },
+    "mirana": {
+      "bane": 8,
+      "shadow_demon": 7,
+      "dragon_knight": 4
+    },
+    "tidehunter": {
+      "invoker": 6,
+      "snapfire": 6,
+      "luna": 4
+    },
+    "enigma": {
+      "disruptor": 5,
+      "faceless_void": 4,
+      "phoenix": 4
+    },
+    "warlock": {
+      "tidehunter": 5,
+      "faceless_void": 5,
+      "mars": 4
+    }
+  },
+  "teamNeeds": {
+    "stun": "Надежный стан",
+    "disable": "Долгий контроль",
+    "initiation": "Инициация",
+    "teamfight": "Командный файт",
+    "tower": "Урон по зданиям",
+    "save": "Сейв союзника",
+    "wave_clear": "Чистка волн",
+    "scaling": "Поздняя игра"
+  },
+  "patch": {
+    "version": "7.41c",
+    "updatedAt": "2026-05-15",
+    "source": "OpenDota heroStats + local draft knowledge",
+    "rankBracket": "all ranked buckets"
+  }
+}

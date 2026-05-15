@@ -1,0 +1,2806 @@
+[
+  {
+    "id": "abaddon",
+    "dotaId": 102,
+    "name": "Abaddon",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "carry"
+    ],
+    "tags": [
+      "save",
+      "scaling",
+      "durable"
+    ],
+    "winRate": 51.0,
+    "pickRate": 3.3,
+    "image": "abaddon"
+  },
+  {
+    "id": "alchemist",
+    "dotaId": 73,
+    "name": "Alchemist",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "save",
+      "durable",
+      "disable",
+      "stun",
+      "initiation",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 47.8,
+    "pickRate": 8.4,
+    "image": "alchemist"
+  },
+  {
+    "id": "ancient_apparition",
+    "dotaId": 68,
+    "name": "Ancient Apparition",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 50.7,
+    "pickRate": 6.2,
+    "image": "ancient_apparition"
+  },
+  {
+    "id": "anti_mage",
+    "dotaId": 1,
+    "name": "Anti-Mage",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "burst"
+    ],
+    "winRate": 48.9,
+    "pickRate": 11.9,
+    "image": "antimage"
+  },
+  {
+    "id": "arc_warden",
+    "dotaId": 113,
+    "name": "Arc Warden",
+    "attribute": "universal",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "mobility",
+      "burst"
+    ],
+    "winRate": 50.1,
+    "pickRate": 2.9,
+    "image": "arc_warden"
+  },
+  {
+    "id": "axe",
+    "dotaId": 2,
+    "name": "Axe",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "durable",
+      "disable",
+      "stun",
+      "scaling",
+      "teamfight"
+    ],
+    "winRate": 53.4,
+    "pickRate": 18.6,
+    "image": "axe"
+  },
+  {
+    "id": "bane",
+    "dotaId": 3,
+    "name": "Bane",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "burst",
+      "durable",
+      "teamfight"
+    ],
+    "winRate": 50.5,
+    "pickRate": 2.8,
+    "image": "bane"
+  },
+  {
+    "id": "batrider",
+    "dotaId": 65,
+    "name": "Batrider",
+    "attribute": "universal",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "ranged",
+      "initiation",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 43.8,
+    "pickRate": 2.3,
+    "image": "batrider"
+  },
+  {
+    "id": "beastmaster",
+    "dotaId": 38,
+    "name": "Beastmaster",
+    "attribute": "universal",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "disable",
+      "stun",
+      "durable",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 44.4,
+    "pickRate": 5.0,
+    "image": "beastmaster"
+  },
+  {
+    "id": "bloodseeker",
+    "dotaId": 4,
+    "name": "Bloodseeker",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "scaling",
+      "disable",
+      "stun",
+      "burst",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 52.1,
+    "pickRate": 4.4,
+    "image": "bloodseeker"
+  },
+  {
+    "id": "bounty_hunter",
+    "dotaId": 62,
+    "name": "Bounty Hunter",
+    "attribute": "agi",
+    "roles": [
+      "mid",
+      "carry",
+      "soft"
+    ],
+    "tags": [
+      "mobility",
+      "burst"
+    ],
+    "winRate": 51.1,
+    "pickRate": 4.8,
+    "image": "bounty_hunter"
+  },
+  {
+    "id": "brewmaster",
+    "dotaId": 78,
+    "name": "Brewmaster",
+    "attribute": "universal",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "initiation",
+      "durable",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 50.4,
+    "pickRate": 1.4,
+    "image": "brewmaster"
+  },
+  {
+    "id": "bristleback",
+    "dotaId": 99,
+    "name": "Bristleback",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "durable",
+      "initiation",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 49.3,
+    "pickRate": 10.1,
+    "image": "bristleback"
+  },
+  {
+    "id": "broodmother",
+    "dotaId": 61,
+    "name": "Broodmother",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "scaling",
+      "tower",
+      "push",
+      "mobility",
+      "burst"
+    ],
+    "winRate": 50.4,
+    "pickRate": 2.6,
+    "image": "broodmother"
+  },
+  {
+    "id": "centaur_warrunner",
+    "dotaId": 96,
+    "name": "Centaur Warrunner",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "durable",
+      "initiation",
+      "disable",
+      "stun",
+      "burst",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 49.5,
+    "pickRate": 4.9,
+    "image": "centaur"
+  },
+  {
+    "id": "chaos_knight",
+    "dotaId": 81,
+    "name": "Chaos Knight",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "scaling",
+      "disable",
+      "stun",
+      "durable",
+      "tower",
+      "push",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 50.2,
+    "pickRate": 3.8,
+    "image": "chaos_knight"
+  },
+  {
+    "id": "chen",
+    "dotaId": 66,
+    "name": "Chen",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "tower",
+      "push"
+    ],
+    "winRate": 45.5,
+    "pickRate": 0.5,
+    "image": "chen"
+  },
+  {
+    "id": "clinkz",
+    "dotaId": 56,
+    "name": "Clinkz",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "mobility",
+      "tower",
+      "push"
+    ],
+    "winRate": 49.7,
+    "pickRate": 5.3,
+    "image": "clinkz"
+  },
+  {
+    "id": "clockwerk",
+    "dotaId": 51,
+    "name": "Clockwerk",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "disable",
+      "stun",
+      "durable",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 49.0,
+    "pickRate": 3.6,
+    "image": "rattletrap"
+  },
+  {
+    "id": "crystal_maiden",
+    "dotaId": 5,
+    "name": "Crystal Maiden",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 51.6,
+    "pickRate": 12.5,
+    "image": "crystal_maiden"
+  },
+  {
+    "id": "dark_seer",
+    "dotaId": 55,
+    "name": "Dark Seer",
+    "attribute": "int",
+    "roles": [
+      "offlane",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "initiation",
+      "mobility",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 49.2,
+    "pickRate": 1.9,
+    "image": "dark_seer"
+  },
+  {
+    "id": "dark_willow",
+    "dotaId": 119,
+    "name": "Dark Willow",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 48.1,
+    "pickRate": 4.5,
+    "image": "dark_willow"
+  },
+  {
+    "id": "dawnbreaker",
+    "dotaId": 135,
+    "name": "Dawnbreaker",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane"
+    ],
+    "tags": [
+      "scaling",
+      "durable"
+    ],
+    "winRate": 52.4,
+    "pickRate": 10.8,
+    "image": "dawnbreaker"
+  },
+  {
+    "id": "dazzle",
+    "dotaId": 50,
+    "name": "Dazzle",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 50.5,
+    "pickRate": 4.4,
+    "image": "dazzle"
+  },
+  {
+    "id": "death_prophet",
+    "dotaId": 43,
+    "name": "Death Prophet",
+    "attribute": "universal",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "tower",
+      "push",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 47.6,
+    "pickRate": 4.5,
+    "image": "death_prophet"
+  },
+  {
+    "id": "disruptor",
+    "dotaId": 87,
+    "name": "Disruptor",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "burst",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 49.5,
+    "pickRate": 7.4,
+    "image": "disruptor"
+  },
+  {
+    "id": "doom",
+    "dotaId": 69,
+    "name": "Doom",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "scaling",
+      "disable",
+      "stun",
+      "initiation",
+      "durable",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 46.1,
+    "pickRate": 4.7,
+    "image": "doom_bringer"
+  },
+  {
+    "id": "dragon_knight",
+    "dotaId": 49,
+    "name": "Dragon Knight",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "tower",
+      "push",
+      "durable",
+      "disable",
+      "stun",
+      "initiation",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 48.7,
+    "pickRate": 4.2,
+    "image": "dragon_knight"
+  },
+  {
+    "id": "drow_ranger",
+    "dotaId": 6,
+    "name": "Drow Ranger",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "disable",
+      "stun",
+      "tower",
+      "push",
+      "teamfight"
+    ],
+    "winRate": 50.8,
+    "pickRate": 13.4,
+    "image": "drow_ranger"
+  },
+  {
+    "id": "earth_spirit",
+    "dotaId": 107,
+    "name": "Earth Spirit",
+    "attribute": "str",
+    "roles": [
+      "mid",
+      "soft",
+      "carry"
+    ],
+    "tags": [
+      "burst",
+      "mobility",
+      "disable",
+      "stun",
+      "initiation",
+      "durable",
+      "teamfight"
+    ],
+    "winRate": 50.6,
+    "pickRate": 3.4,
+    "image": "earth_spirit"
+  },
+  {
+    "id": "earthshaker",
+    "dotaId": 7,
+    "name": "Earthshaker",
+    "attribute": "str",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "save",
+      "initiation",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 50.0,
+    "pickRate": 12.5,
+    "image": "earthshaker"
+  },
+  {
+    "id": "elder_titan",
+    "dotaId": 103,
+    "name": "Elder Titan",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "disable",
+      "stun",
+      "burst",
+      "durable",
+      "teamfight"
+    ],
+    "winRate": 49.7,
+    "pickRate": 1.0,
+    "image": "elder_titan"
+  },
+  {
+    "id": "ember_spirit",
+    "dotaId": 106,
+    "name": "Ember Spirit",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "burst",
+      "disable",
+      "stun",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 49.0,
+    "pickRate": 7.3,
+    "image": "ember_spirit"
+  },
+  {
+    "id": "enchantress",
+    "dotaId": 58,
+    "name": "Enchantress",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "tower",
+      "push",
+      "durable",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 48.7,
+    "pickRate": 2.7,
+    "image": "enchantress"
+  },
+  {
+    "id": "enigma",
+    "dotaId": 33,
+    "name": "Enigma",
+    "attribute": "universal",
+    "roles": [
+      "soft",
+      "hard",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "disable",
+      "stun",
+      "initiation",
+      "tower",
+      "push",
+      "teamfight"
+    ],
+    "winRate": 49.8,
+    "pickRate": 3.2,
+    "image": "enigma"
+  },
+  {
+    "id": "faceless_void",
+    "dotaId": 41,
+    "name": "Faceless Void",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "initiation",
+      "disable",
+      "stun",
+      "mobility",
+      "durable",
+      "teamfight"
+    ],
+    "winRate": 51.2,
+    "pickRate": 15.3,
+    "image": "faceless_void"
+  },
+  {
+    "id": "grimstroke",
+    "dotaId": 121,
+    "name": "Grimstroke",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 52.0,
+    "pickRate": 5.6,
+    "image": "grimstroke"
+  },
+  {
+    "id": "gyrocopter",
+    "dotaId": 72,
+    "name": "Gyrocopter",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 43.3,
+    "pickRate": 3.0,
+    "image": "gyrocopter"
+  },
+  {
+    "id": "hoodwink",
+    "dotaId": 123,
+    "name": "Hoodwink",
+    "attribute": "agi",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "mobility",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 48.6,
+    "pickRate": 11.4,
+    "image": "hoodwink"
+  },
+  {
+    "id": "huskar",
+    "dotaId": 59,
+    "name": "Huskar",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "durable",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 48.5,
+    "pickRate": 6.2,
+    "image": "huskar"
+  },
+  {
+    "id": "invoker",
+    "dotaId": 74,
+    "name": "Invoker",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "disable",
+      "stun",
+      "mobility",
+      "tower",
+      "push",
+      "teamfight"
+    ],
+    "winRate": 51.6,
+    "pickRate": 20.7,
+    "image": "invoker"
+  },
+  {
+    "id": "io",
+    "dotaId": 91,
+    "name": "Io",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "mobility",
+      "burst"
+    ],
+    "winRate": 49.9,
+    "pickRate": 3.5,
+    "image": "wisp"
+  },
+  {
+    "id": "jakiro",
+    "dotaId": 64,
+    "name": "Jakiro",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "tower",
+      "push",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 47.2,
+    "pickRate": 8.8,
+    "image": "jakiro"
+  },
+  {
+    "id": "juggernaut",
+    "dotaId": 8,
+    "name": "Juggernaut",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "scaling",
+      "tower",
+      "push",
+      "mobility"
+    ],
+    "winRate": 51.7,
+    "pickRate": 15.3,
+    "image": "juggernaut"
+  },
+  {
+    "id": "keeper_of_the_light",
+    "dotaId": 90,
+    "name": "Keeper of the Light",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 51.2,
+    "pickRate": 5.0,
+    "image": "keeper_of_the_light"
+  },
+  {
+    "id": "kez",
+    "dotaId": 145,
+    "name": "Kez",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 47.2,
+    "pickRate": 5.4,
+    "image": "kez"
+  },
+  {
+    "id": "kunkka",
+    "dotaId": 23,
+    "name": "Kunkka",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "save",
+      "disable",
+      "stun",
+      "initiation",
+      "durable",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 49.2,
+    "pickRate": 5.3,
+    "image": "kunkka"
+  },
+  {
+    "id": "largo",
+    "dotaId": 155,
+    "name": "Largo",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "durable",
+      "disable",
+      "stun",
+      "save",
+      "teamfight"
+    ],
+    "winRate": 48.5,
+    "pickRate": 1.7,
+    "image": "largo"
+  },
+  {
+    "id": "legion_commander",
+    "dotaId": 104,
+    "name": "Legion Commander",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "scaling",
+      "disable",
+      "stun",
+      "initiation",
+      "durable",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 52.8,
+    "pickRate": 15.1,
+    "image": "legion_commander"
+  },
+  {
+    "id": "leshrac",
+    "dotaId": 52,
+    "name": "Leshrac",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "save",
+      "burst",
+      "tower",
+      "push",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 48.9,
+    "pickRate": 2.2,
+    "image": "leshrac"
+  },
+  {
+    "id": "lich",
+    "dotaId": 31,
+    "name": "Lich",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst"
+    ],
+    "winRate": 52.2,
+    "pickRate": 11.3,
+    "image": "lich"
+  },
+  {
+    "id": "lifestealer",
+    "dotaId": 54,
+    "name": "Lifestealer",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "scaling",
+      "durable",
+      "mobility",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 51.8,
+    "pickRate": 10.9,
+    "image": "life_stealer"
+  },
+  {
+    "id": "lina",
+    "dotaId": 25,
+    "name": "Lina",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "carry"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "scaling",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 48.8,
+    "pickRate": 12.6,
+    "image": "lina"
+  },
+  {
+    "id": "lion",
+    "dotaId": 26,
+    "name": "Lion",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "burst",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 49.9,
+    "pickRate": 28.2,
+    "image": "lion"
+  },
+  {
+    "id": "lone_druid",
+    "dotaId": 80,
+    "name": "Lone Druid",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "tower",
+      "push",
+      "durable"
+    ],
+    "winRate": 49.3,
+    "pickRate": 4.7,
+    "image": "lone_druid"
+  },
+  {
+    "id": "luna",
+    "dotaId": 48,
+    "name": "Luna",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "tower",
+      "push"
+    ],
+    "winRate": 49.7,
+    "pickRate": 7.6,
+    "image": "luna"
+  },
+  {
+    "id": "lycan",
+    "dotaId": 77,
+    "name": "Lycan",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "scaling",
+      "tower",
+      "push",
+      "durable",
+      "mobility"
+    ],
+    "winRate": 48.7,
+    "pickRate": 1.6,
+    "image": "lycan"
+  },
+  {
+    "id": "magnus",
+    "dotaId": 97,
+    "name": "Magnus",
+    "attribute": "universal",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "disable",
+      "stun",
+      "burst",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 49.4,
+    "pickRate": 10.6,
+    "image": "magnataur"
+  },
+  {
+    "id": "marci",
+    "dotaId": 136,
+    "name": "Marci",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "carry"
+    ],
+    "tags": [
+      "save",
+      "scaling",
+      "initiation",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 48.9,
+    "pickRate": 3.9,
+    "image": "marci"
+  },
+  {
+    "id": "mars",
+    "dotaId": 129,
+    "name": "Mars",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "initiation",
+      "disable",
+      "stun",
+      "durable",
+      "teamfight"
+    ],
+    "winRate": 45.3,
+    "pickRate": 7.0,
+    "image": "mars"
+  },
+  {
+    "id": "medusa",
+    "dotaId": 94,
+    "name": "Medusa",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "disable",
+      "stun",
+      "durable",
+      "teamfight"
+    ],
+    "winRate": 49.7,
+    "pickRate": 4.1,
+    "image": "medusa"
+  },
+  {
+    "id": "meepo",
+    "dotaId": 82,
+    "name": "Meepo",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "burst",
+      "disable",
+      "stun",
+      "initiation",
+      "tower",
+      "push",
+      "teamfight"
+    ],
+    "winRate": 51.0,
+    "pickRate": 1.7,
+    "image": "meepo"
+  },
+  {
+    "id": "mirana",
+    "dotaId": 9,
+    "name": "Mirana",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "save",
+      "mobility",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 50.5,
+    "pickRate": 6.8,
+    "image": "mirana"
+  },
+  {
+    "id": "monkey_king",
+    "dotaId": 114,
+    "name": "Monkey King",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "disable",
+      "stun",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 44.9,
+    "pickRate": 8.8,
+    "image": "monkey_king"
+  },
+  {
+    "id": "morphling",
+    "dotaId": 10,
+    "name": "Morphling",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "mobility",
+      "durable",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 47.4,
+    "pickRate": 3.5,
+    "image": "morphling"
+  },
+  {
+    "id": "muerta",
+    "dotaId": 138,
+    "name": "Muerta",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 47.6,
+    "pickRate": 5.6,
+    "image": "muerta"
+  },
+  {
+    "id": "naga_siren",
+    "dotaId": 89,
+    "name": "Naga Siren",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "save",
+      "tower",
+      "push",
+      "disable",
+      "stun",
+      "initiation",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 50.1,
+    "pickRate": 1.9,
+    "image": "naga_siren"
+  },
+  {
+    "id": "natures_prophet",
+    "dotaId": 53,
+    "name": "Nature's Prophet",
+    "attribute": "universal",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "tower",
+      "push",
+      "mobility",
+      "burst"
+    ],
+    "winRate": 43.3,
+    "pickRate": 8.3,
+    "image": "furion"
+  },
+  {
+    "id": "necrophos",
+    "dotaId": 36,
+    "name": "Necrophos",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "durable",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 52.3,
+    "pickRate": 15.7,
+    "image": "necrolyte"
+  },
+  {
+    "id": "night_stalker",
+    "dotaId": 60,
+    "name": "Night Stalker",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "initiation",
+      "durable",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 52.5,
+    "pickRate": 6.9,
+    "image": "night_stalker"
+  },
+  {
+    "id": "nyx_assassin",
+    "dotaId": 88,
+    "name": "Nyx Assassin",
+    "attribute": "universal",
+    "roles": [
+      "soft",
+      "hard",
+      "mid"
+    ],
+    "tags": [
+      "disable",
+      "stun",
+      "burst",
+      "initiation",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 52.2,
+    "pickRate": 6.4,
+    "image": "nyx_assassin"
+  },
+  {
+    "id": "ogre_magi",
+    "dotaId": 84,
+    "name": "Ogre Magi",
+    "attribute": "str",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "durable",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 50.4,
+    "pickRate": 16.6,
+    "image": "ogre_magi"
+  },
+  {
+    "id": "omniknight",
+    "dotaId": 57,
+    "name": "Omniknight",
+    "attribute": "str",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "save",
+      "durable",
+      "burst"
+    ],
+    "winRate": 49.2,
+    "pickRate": 2.7,
+    "image": "omniknight"
+  },
+  {
+    "id": "oracle",
+    "dotaId": 111,
+    "name": "Oracle",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 49.8,
+    "pickRate": 3.4,
+    "image": "oracle"
+  },
+  {
+    "id": "outworld_devourer",
+    "dotaId": 76,
+    "name": "Outworld Devourer",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 49.4,
+    "pickRate": 4.2,
+    "image": "obsidian_destroyer"
+  },
+  {
+    "id": "pangolier",
+    "dotaId": 120,
+    "name": "Pangolier",
+    "attribute": "universal",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "burst",
+      "disable",
+      "stun",
+      "durable",
+      "mobility",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 47.2,
+    "pickRate": 7.2,
+    "image": "pangolier"
+  },
+  {
+    "id": "phantom_assassin",
+    "dotaId": 44,
+    "name": "Phantom Assassin",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid"
+    ],
+    "tags": [
+      "scaling",
+      "mobility"
+    ],
+    "winRate": 51.3,
+    "pickRate": 14.9,
+    "image": "phantom_assassin"
+  },
+  {
+    "id": "phantom_lancer",
+    "dotaId": 12,
+    "name": "Phantom Lancer",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "offlane"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "tower",
+      "push",
+      "burst"
+    ],
+    "winRate": 52.8,
+    "pickRate": 10.0,
+    "image": "phantom_lancer"
+  },
+  {
+    "id": "phoenix",
+    "dotaId": 110,
+    "name": "Phoenix",
+    "attribute": "str",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "initiation",
+      "mobility",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 51.1,
+    "pickRate": 7.9,
+    "image": "phoenix"
+  },
+  {
+    "id": "primal_beast",
+    "dotaId": 137,
+    "name": "Primal Beast",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "durable",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 48.3,
+    "pickRate": 3.9,
+    "image": "primal_beast"
+  },
+  {
+    "id": "puck",
+    "dotaId": 13,
+    "name": "Puck",
+    "attribute": "int",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "ranged",
+      "initiation",
+      "disable",
+      "stun",
+      "mobility",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 47.3,
+    "pickRate": 4.7,
+    "image": "puck"
+  },
+  {
+    "id": "pudge",
+    "dotaId": 14,
+    "name": "Pudge",
+    "attribute": "str",
+    "roles": [
+      "soft",
+      "hard",
+      "offlane"
+    ],
+    "tags": [
+      "disable",
+      "stun",
+      "initiation",
+      "durable",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 50.7,
+    "pickRate": 27.3,
+    "image": "pudge"
+  },
+  {
+    "id": "pugna",
+    "dotaId": 45,
+    "name": "Pugna",
+    "attribute": "int",
+    "roles": [
+      "mid",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "burst",
+      "tower",
+      "push"
+    ],
+    "winRate": 49.6,
+    "pickRate": 4.3,
+    "image": "pugna"
+  },
+  {
+    "id": "queen_of_pain",
+    "dotaId": 39,
+    "name": "Queen of Pain",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "mobility"
+    ],
+    "winRate": 46.4,
+    "pickRate": 15.9,
+    "image": "queenofpain"
+  },
+  {
+    "id": "razor",
+    "dotaId": 15,
+    "name": "Razor",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "durable",
+      "burst",
+      "tower",
+      "push"
+    ],
+    "winRate": 49.1,
+    "pickRate": 5.3,
+    "image": "razor"
+  },
+  {
+    "id": "riki",
+    "dotaId": 32,
+    "name": "Riki",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 53.0,
+    "pickRate": 6.1,
+    "image": "riki"
+  },
+  {
+    "id": "ring_master",
+    "dotaId": 131,
+    "name": "Ring Master",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "mobility",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 48.5,
+    "pickRate": 3.6,
+    "image": "ringmaster"
+  },
+  {
+    "id": "rubick",
+    "dotaId": 86,
+    "name": "Rubick",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 50.1,
+    "pickRate": 22.2,
+    "image": "rubick"
+  },
+  {
+    "id": "sand_king",
+    "dotaId": 16,
+    "name": "Sand King",
+    "attribute": "universal",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "disable",
+      "stun",
+      "save",
+      "burst",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 47.6,
+    "pickRate": 4.9,
+    "image": "sand_king"
+  },
+  {
+    "id": "shadow_demon",
+    "dotaId": 79,
+    "name": "Shadow Demon",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "initiation",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 44.8,
+    "pickRate": 2.3,
+    "image": "shadow_demon"
+  },
+  {
+    "id": "shadow_fiend",
+    "dotaId": 11,
+    "name": "Shadow Fiend",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst"
+    ],
+    "winRate": 49.1,
+    "pickRate": 12.1,
+    "image": "nevermore"
+  },
+  {
+    "id": "shadow_shaman",
+    "dotaId": 27,
+    "name": "Shadow Shaman",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "tower",
+      "push",
+      "disable",
+      "stun",
+      "burst",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 52.1,
+    "pickRate": 16.0,
+    "image": "shadow_shaman"
+  },
+  {
+    "id": "silencer",
+    "dotaId": 75,
+    "name": "Silencer",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "save",
+      "disable",
+      "stun",
+      "initiation",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 50.9,
+    "pickRate": 12.8,
+    "image": "silencer"
+  },
+  {
+    "id": "skywrath_mage",
+    "dotaId": 101,
+    "name": "Skywrath Mage",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 50.1,
+    "pickRate": 12.8,
+    "image": "skywrath_mage"
+  },
+  {
+    "id": "slardar",
+    "dotaId": 28,
+    "name": "Slardar",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "durable",
+      "initiation",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 51.0,
+    "pickRate": 9.5,
+    "image": "slardar"
+  },
+  {
+    "id": "slark",
+    "dotaId": 93,
+    "name": "Slark",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 50.2,
+    "pickRate": 13.8,
+    "image": "slark"
+  },
+  {
+    "id": "snapfire",
+    "dotaId": 128,
+    "name": "Snapfire",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 49.0,
+    "pickRate": 7.7,
+    "image": "snapfire"
+  },
+  {
+    "id": "sniper",
+    "dotaId": 35,
+    "name": "Sniper",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst"
+    ],
+    "winRate": 51.8,
+    "pickRate": 21.2,
+    "image": "sniper"
+  },
+  {
+    "id": "spectre",
+    "dotaId": 67,
+    "name": "Spectre",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "scaling",
+      "durable",
+      "mobility"
+    ],
+    "winRate": 55.2,
+    "pickRate": 10.2,
+    "image": "spectre"
+  },
+  {
+    "id": "spirit_breaker",
+    "dotaId": 71,
+    "name": "Spirit Breaker",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "initiation",
+      "disable",
+      "stun",
+      "durable",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 51.3,
+    "pickRate": 16.3,
+    "image": "spirit_breaker"
+  },
+  {
+    "id": "storm_spirit",
+    "dotaId": 17,
+    "name": "Storm Spirit",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "mobility",
+      "burst",
+      "initiation",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 47.7,
+    "pickRate": 7.7,
+    "image": "storm_spirit"
+  },
+  {
+    "id": "sven",
+    "dotaId": 18,
+    "name": "Sven",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "scaling",
+      "disable",
+      "stun",
+      "initiation",
+      "durable",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 49.4,
+    "pickRate": 4.2,
+    "image": "sven"
+  },
+  {
+    "id": "techies",
+    "dotaId": 105,
+    "name": "Techies",
+    "attribute": "universal",
+    "roles": [
+      "mid",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "ranged",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 51.4,
+    "pickRate": 11.7,
+    "image": "techies"
+  },
+  {
+    "id": "templar_assassin",
+    "dotaId": 46,
+    "name": "Templar Assassin",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "mobility"
+    ],
+    "winRate": 46.2,
+    "pickRate": 4.1,
+    "image": "templar_assassin"
+  },
+  {
+    "id": "terrorblade",
+    "dotaId": 109,
+    "name": "Terrorblade",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "mid"
+    ],
+    "tags": [
+      "scaling",
+      "tower",
+      "push",
+      "burst"
+    ],
+    "winRate": 48.6,
+    "pickRate": 3.5,
+    "image": "terrorblade"
+  },
+  {
+    "id": "tidehunter",
+    "dotaId": 29,
+    "name": "Tidehunter",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "durable",
+      "disable",
+      "stun",
+      "burst",
+      "scaling",
+      "teamfight"
+    ],
+    "winRate": 50.8,
+    "pickRate": 10.9,
+    "image": "tidehunter"
+  },
+  {
+    "id": "timbersaw",
+    "dotaId": 98,
+    "name": "Timbersaw",
+    "attribute": "str",
+    "roles": [
+      "mid",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "burst",
+      "durable",
+      "mobility"
+    ],
+    "winRate": 44.7,
+    "pickRate": 3.1,
+    "image": "shredder"
+  },
+  {
+    "id": "tinker",
+    "dotaId": 34,
+    "name": "Tinker",
+    "attribute": "int",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "burst",
+      "tower",
+      "push"
+    ],
+    "winRate": 46.8,
+    "pickRate": 4.5,
+    "image": "tinker"
+  },
+  {
+    "id": "tiny",
+    "dotaId": 19,
+    "name": "Tiny",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "burst",
+      "tower",
+      "push",
+      "initiation",
+      "durable",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 45.1,
+    "pickRate": 8.7,
+    "image": "tiny"
+  },
+  {
+    "id": "treant_protector",
+    "dotaId": 83,
+    "name": "Treant Protector",
+    "attribute": "str",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "save",
+      "initiation",
+      "durable",
+      "disable",
+      "stun",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 48.9,
+    "pickRate": 2.7,
+    "image": "treant"
+  },
+  {
+    "id": "troll_warlord",
+    "dotaId": 95,
+    "name": "Troll Warlord",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "tower",
+      "push",
+      "disable",
+      "stun",
+      "durable",
+      "teamfight"
+    ],
+    "winRate": 51.6,
+    "pickRate": 2.8,
+    "image": "troll_warlord"
+  },
+  {
+    "id": "tusk",
+    "dotaId": 100,
+    "name": "Tusk",
+    "attribute": "str",
+    "roles": [
+      "offlane",
+      "soft",
+      "hard"
+    ],
+    "tags": [
+      "initiation",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 48.1,
+    "pickRate": 5.7,
+    "image": "tusk"
+  },
+  {
+    "id": "underlord",
+    "dotaId": 108,
+    "name": "Underlord",
+    "attribute": "str",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "durable",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 50.8,
+    "pickRate": 6.5,
+    "image": "abyssal_underlord"
+  },
+  {
+    "id": "undying",
+    "dotaId": 85,
+    "name": "Undying",
+    "attribute": "str",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "save",
+      "durable",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 51.7,
+    "pickRate": 9.9,
+    "image": "undying"
+  },
+  {
+    "id": "ursa",
+    "dotaId": 70,
+    "name": "Ursa",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "durable",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 47.1,
+    "pickRate": 7.5,
+    "image": "ursa"
+  },
+  {
+    "id": "vengeful_spirit",
+    "dotaId": 20,
+    "name": "Vengeful Spirit",
+    "attribute": "agi",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "initiation",
+      "disable",
+      "stun",
+      "burst",
+      "mobility",
+      "teamfight"
+    ],
+    "winRate": 52.7,
+    "pickRate": 8.0,
+    "image": "vengefulspirit"
+  },
+  {
+    "id": "venomancer",
+    "dotaId": 40,
+    "name": "Venomancer",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "initiation",
+      "tower",
+      "push",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 46.7,
+    "pickRate": 10.2,
+    "image": "venomancer"
+  },
+  {
+    "id": "viper",
+    "dotaId": 47,
+    "name": "Viper",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "offlane",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "durable",
+      "initiation",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 48.4,
+    "pickRate": 8.0,
+    "image": "viper"
+  },
+  {
+    "id": "visage",
+    "dotaId": 92,
+    "name": "Visage",
+    "attribute": "universal",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "durable",
+      "disable",
+      "stun",
+      "tower",
+      "push",
+      "teamfight"
+    ],
+    "winRate": 52.1,
+    "pickRate": 1.7,
+    "image": "visage"
+  },
+  {
+    "id": "void_spirit",
+    "dotaId": 126,
+    "name": "Void Spirit",
+    "attribute": "universal",
+    "roles": [
+      "carry",
+      "mid",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "mobility",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 49.6,
+    "pickRate": 5.5,
+    "image": "void_spirit"
+  },
+  {
+    "id": "warlock",
+    "dotaId": 37,
+    "name": "Warlock",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "offlane"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "initiation",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 49.8,
+    "pickRate": 7.6,
+    "image": "warlock"
+  },
+  {
+    "id": "weaver",
+    "dotaId": 63,
+    "name": "Weaver",
+    "attribute": "agi",
+    "roles": [
+      "carry",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "mobility"
+    ],
+    "winRate": 46.4,
+    "pickRate": 7.9,
+    "image": "weaver"
+  },
+  {
+    "id": "windranger",
+    "dotaId": 21,
+    "name": "Windranger",
+    "attribute": "universal",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "ranged",
+      "scaling",
+      "save",
+      "disable",
+      "stun",
+      "mobility",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 48.1,
+    "pickRate": 13.1,
+    "image": "windrunner"
+  },
+  {
+    "id": "winter_wyvern",
+    "dotaId": 112,
+    "name": "Winter Wyvern",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "disable",
+      "stun",
+      "burst",
+      "teamfight"
+    ],
+    "winRate": 49.9,
+    "pickRate": 4.6,
+    "image": "winter_wyvern"
+  },
+  {
+    "id": "witch_doctor",
+    "dotaId": 30,
+    "name": "Witch Doctor",
+    "attribute": "int",
+    "roles": [
+      "hard",
+      "soft",
+      "mid"
+    ],
+    "tags": [
+      "ranged",
+      "save",
+      "burst",
+      "disable",
+      "stun",
+      "teamfight"
+    ],
+    "winRate": 51.4,
+    "pickRate": 17.3,
+    "image": "witch_doctor"
+  },
+  {
+    "id": "wraith_king",
+    "dotaId": 42,
+    "name": "Wraith King",
+    "attribute": "str",
+    "roles": [
+      "carry",
+      "hard",
+      "soft"
+    ],
+    "tags": [
+      "scaling",
+      "save",
+      "durable",
+      "disable",
+      "stun",
+      "initiation",
+      "teamfight"
+    ],
+    "winRate": 53.9,
+    "pickRate": 11.6,
+    "image": "skeleton_king"
+  },
+  {
+    "id": "zeus",
+    "dotaId": 22,
+    "name": "Zeus",
+    "attribute": "int",
+    "roles": [
+      "mid",
+      "soft",
+      "carry"
+    ],
+    "tags": [
+      "ranged",
+      "burst",
+      "scaling"
+    ],
+    "winRate": 51.4,
+    "pickRate": 17.0,
+    "image": "zuus"
+  }
+]
