@@ -251,8 +251,6 @@ function Topbar({ patch }) {
       </div>
       <div className="status-strip">
         <span className="status-pill patch">Patch {patch.version}</span>
-        <span className="status-pill">Manual mode</span>
-        <span className="status-pill muted">GSI: planned</span>
       </div>
     </header>
   );
@@ -267,7 +265,7 @@ function DraftPanel({ heroes, state, teamSummary, onState }) {
             <p className="eyebrow">Draft board</p>
             <h2>Текущий драфт</h2>
           </div>
-          <HelpTip text="Выбираешь режим добавления, затем кликаешь героя. Можно выбрать пустой слот и заполнить именно его." />
+          
         </div>
         <div className="role-tabs" role="tablist" aria-label="Роль">
           {ROLE_OPTIONS.map(([value, label]) => (
@@ -625,9 +623,7 @@ function SettingsPanel({ patch, weights, onWeight }) {
           </label>
         ))}
       </div>
-      <p className="data-note">
-        Источник: {patch.source}. Обновлено: {patch.updatedAt}.
-      </p>
+      
     </section>
   );
 }

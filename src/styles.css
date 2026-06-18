@@ -53,12 +53,8 @@ button {
 .status-strip,
 .controls,
 .draft-columns,
-.settings-grid {
-  display: flex;
-  align-items: center;
-}
-
 .topbar {
+  margin-top: 10px;
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 16px;
@@ -696,19 +692,21 @@ h3 {
 }
 
 .settings-grid {
-  align-items: stretch;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 10px;
   margin-top: 14px;
 }
 
 .slider-row {
   display: grid;
-  grid-template-columns: 170px minmax(120px, 1fr) 32px;
-  min-width: min(100%, 310px);
-  flex: 1;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  grid-template-areas:
+    "label value"
+    "range range";
+  min-width: 0;
   align-items: center;
-  gap: 10px;
+  gap: 8px 10px;
   border: 1px solid rgba(142, 160, 183, 0.12);
   border-radius: 8px;
   padding: 10px;
@@ -717,6 +715,8 @@ h3 {
 
 .slider-label {
   display: inline-flex;
+  grid-area: label;
+  min-width: 0;
   align-items: center;
   gap: 6px;
 }
@@ -728,20 +728,25 @@ h3 {
 }
 
 .slider-row strong {
+  display: grid;
+  grid-area: value;
+  min-width: 38px;
+  min-height: 26px;
+  place-items: center;
+  border-radius: 6px;
+  background: rgba(66, 211, 146, 0.14);
   color: #7ee2b8;
-  text-align: right;
+  font-size: 0.86rem;
+  text-align: center;
 }
 
 .slider-row input {
+  grid-area: range;
   width: 100%;
   accent-color: #42d392;
 }
 
-.data-note {
-  margin: 12px 0 0;
-  color: #899bb0;
-  font-size: 0.82rem;
-}
+
 
 code {
   border-radius: 4px;

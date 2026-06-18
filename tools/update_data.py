@@ -26,11 +26,11 @@ RANK_BUCKETS = tuple(str(index) for index in range(1, 9))
 
 ROLE_TO_APP_ROLES = {
     "Carry": ("carry",),
-    "Nuker": ("mid", "soft"),
-    "Initiator": ("offlane", "soft"),
-    "Disabler": ("soft", "hard"),
+    "Nuker": ("mid",),
+    "Initiator": ("offlane",),
+    "Disabler": (),
     "Durable": ("offlane",),
-    "Escape": ("mid", "carry"),
+    "Escape": ("mid",),
     "Support": ("hard", "soft"),
     "Pusher": ("offlane", "carry"),
     "Jungler": ("offlane",),
@@ -55,6 +55,25 @@ ATTRIBUTE_MAP = {
     "all": "universal",
 }
 
+HERO_TAG_OVERRIDES = {
+    "alchemist": ("healing", "high_sustain"),
+    "ancient_apparition": ("anti_heal", "execution", "global"),
+    "bristleback": ("high_sustain", "passive_reliant"),
+    "huskar": ("healing", "high_sustain", "low_hp_playstyle"),
+    "io": ("healing", "save"),
+    "lifestealer": ("healing", "spell_immunity"),
+    "morphling": ("hp_shift", "healing", "high_sustain", "low_hp_playstyle"),
+    "necrophos": ("healing", "high_sustain"),
+    "oracle": ("healing", "save", "dispel"),
+    "pudge": ("high_sustain"),
+    "slark": ("dispellable", "mobility"),
+    "timbersaw": ("high_sustain", "durable"),
+    "troll_warlord": ("low_hp_playstyle"),
+    "ursa": ("low_hp_playstyle"),
+    "warlock": ("healing", "teamfight"),
+    "witch_doctor": ("healing"),
+}
+
 DEFAULT_DRAFT_DATA = {
     "weights": {
         "meta": 35,
@@ -65,6 +84,38 @@ DEFAULT_DRAFT_DATA = {
     },
     "matchups": {},
     "synergies": {},
+    "counterRules": [
+        {
+            "counterTag": "anti_heal",
+            "targetTags": ["healing", "high_sustain", "hp_shift", "low_hp_playstyle"],
+            "value": 4.0,
+            "label": "анти-хил против восстановления и игры на низком HP",
+        },
+        {
+            "counterTag": "silence",
+            "targetTags": ["mobility", "spell_reliant"],
+            "value": 2.4,
+            "label": "сайленс против мобильных героев",
+        },
+        {
+            "counterTag": "break",
+            "targetTags": ["passive_reliant", "durable"],
+            "value": 2.6,
+            "label": "break против пассивок и плотных героев",
+        },
+        {
+            "counterTag": "catch",
+            "targetTags": ["mobility", "split_push"],
+            "value": 2.0,
+            "label": "catch против мобильности и сплит-пуша",
+        },
+        {
+            "counterTag": "wave_clear",
+            "targetTags": ["illusion", "split_push"],
+            "value": 2.4,
+            "label": "чистка волн против иллюзий и сплит-пуша",
+        },
+    ],
     "teamNeeds": {
         "stun": "Надежный стан",
         "disable": "Долгий контроль",
@@ -173,6 +224,7 @@ def infer_app_roles(dota_roles: list[str]) -> list[str]:
 
 def infer_tags(row: dict[str, Any], dota_roles: list[str]) -> list[str]:
     tags: list[str] = []
+    hero_id = slugify(row["localized_name"])
 
     if row.get("attack_type") == "Ranged":
         tags.append("ranged")
@@ -189,6 +241,8 @@ def infer_tags(row: dict[str, Any], dota_roles: list[str]) -> list[str]:
     if "Carry" in dota_roles and "scaling" not in tags:
         tags.append("scaling")
 
+    tags.extend(HERO_TAG_OVERRIDES.get(hero_id, ()))
+
     return dedupe(tags)
 
 
@@ -199,7 +253,7 @@ def build_draft_data(patch: str, output_dir: Path, keep_existing: bool) -> dict[
     if keep_existing and existing_path.exists():
         with existing_path.open("r", encoding="utf-8") as file:
             existing = json.load(file)
-        for key in ("weights", "matchups", "synergies", "teamNeeds"):
+        for key in ("weights", "matchups", "synergies", "counterRules", "teamNeeds"):
             if key in existing:
                 draft_data[key] = existing[key]
 

@@ -21,7 +21,14 @@ const TAG_LABELS = {
   burst: "burst",
   durable: "фронтлайн",
   global: "глобальное влияние",
-  aura: "ауры"
+  aura: "ауры",
+  anti_heal: "анти-хил",
+  healing: "лечение",
+  high_sustain: "сильное восстановление",
+  hp_shift: "перекачка HP",
+  low_hp_playstyle: "игра на низком HP",
+  break: "break",
+  passive_reliant: "зависимость от пассивок"
 };
 
 const TAG_COUNTERS = {
@@ -31,7 +38,11 @@ const TAG_COUNTERS = {
   sustain: ["anti_heal", "burst"],
   durable: ["anti_tank", "percent_damage", "break"],
   ranged: ["initiation", "catch", "backline_access"],
-  split_push: ["global", "catch", "wave_clear"]
+  split_push: ["global", "catch", "wave_clear"],
+  healing: ["anti_heal", "burst"],
+  high_sustain: ["anti_heal", "break"],
+  hp_shift: ["anti_heal", "silence"],
+  low_hp_playstyle: ["anti_heal", "execution", "burst"]
 };
 
 const ROLE_FALLBACKS = {
@@ -42,7 +53,9 @@ const ROLE_FALLBACKS = {
   hard: ["soft"]
 };
 
-export function getRecommendations(heroes, draftData, state) {
+const GENERIC_TAG_COUNTER_WEIGHT = 0.8;
+
+export function getRecommendations(heroes, draftData, state, limit = 12) {
   const selectedIds = getSelectedIds(state);
   const availableHeroes = heroes.filter((hero) => !selectedIds.has(hero.id));
   const allies = resolveHeroes(heroes, state.allies);
@@ -76,7 +89,7 @@ export function getRecommendations(heroes, draftData, state) {
       };
     })
     .sort((a, b) => b.score - a.score || b.hero.winRate - a.hero.winRate)
-    .slice(0, 12);
+    .slice(0, limit);
 }
 
 export function getTeamSummary(heroes, draftData, state) {
@@ -138,25 +151,29 @@ function scoreCounters(hero, enemies, draftData) {
   }
 
   const ownMatchups = draftData.matchups[hero.id] ?? {};
+  const counterRules = draftData.counterRules ?? [];
   const values = enemies.map((enemy) => {
     const direct = ownMatchups[enemy.id];
-    const heuristic = getTagCounterScore(hero, enemy);
+    const heuristic = getTagCounterScore(hero, enemy, counterRules);
+    const value = typeof direct === "number" ? direct + heuristic * 0.35 : heuristic;
     return {
       enemy,
-      value: typeof direct === "number" ? direct : heuristic,
-      direct: typeof direct === "number"
+      value: clamp(value, -8, 8),
+      direct: typeof direct === "number",
+      heuristic
     };
   });
 
   const average = values.reduce((sum, item) => sum + item.value, 0) / values.length;
   const directSamples = values.filter((item) => item.direct).length;
+  const mechanicalSamples = values.filter((item) => item.heuristic >= 4).length;
   const positive = values.filter((item) => item.value >= 3).sort((a, b) => b.value - a.value);
   const negative = values.filter((item) => item.value <= -3).sort((a, b) => a.value - b.value);
 
   return {
-    value: clamp(average * 4, -30, 30),
+    value: clamp(average * 4, -32, 32),
     label: explainMatchups(positive, negative),
-    samples: directSamples,
+    samples: directSamples + mechanicalSamples,
     positive,
     negative
   };
@@ -207,11 +224,20 @@ function scoreNeeds(hero, allies, draftData) {
   };
 }
 
-function getTagCounterScore(hero, enemy) {
+function getTagCounterScore(hero, enemy, counterRules) {
   let value = 0;
   for (const enemyTag of enemy.tags ?? []) {
     const counterTags = TAG_COUNTERS[enemyTag] ?? [];
-    value += hero.tags.filter((tag) => counterTags.includes(tag)).length * 1.4;
+    value += hero.tags.filter((tag) => counterTags.includes(tag)).length * GENERIC_TAG_COUNTER_WEIGHT;
+  }
+
+  for (const rule of counterRules) {
+    if (!hero.tags.includes(rule.counterTag)) continue;
+    const targetTags = rule.targetTags ?? [];
+    const matches = targetTags.some((tag) => enemy.tags.includes(tag));
+    if (matches) {
+      value += Number(rule.value ?? 0);
+    }
   }
 
   if (enemy.tags.includes("ranged") && hero.tags.includes("initiation")) value += 1.5;
@@ -224,7 +250,7 @@ function getTagCounterScore(hero, enemy) {
     value -= 2;
   }
 
-  return clamp(value, -4, 5);
+  return clamp(value, -4, 8);
 }
 
 function getTagSynergyScore(hero, ally) {
@@ -263,6 +289,11 @@ function buildReasons(hero, parts) {
     reasons.push(`Контрит: ${parts.counter.positive.slice(0, 3).map((item) => item.enemy.name).join(", ")}`);
   }
 
+  const mechanicReason = getMechanicReason(hero, parts.counter.positive);
+  if (mechanicReason) {
+    reasons.push(mechanicReason);
+  }
+
   if (parts.synergy.positive.length) {
     reasons.push(`Сочетается с: ${parts.synergy.positive.slice(0, 3).map((item) => item.ally.name).join(", ")}`);
   }
@@ -286,10 +317,31 @@ function buildReasons(hero, parts) {
   return reasons;
 }
 
+function getMechanicReason(hero, positiveMatchups) {
+  const targetTags = new Set(positiveMatchups.flatMap((item) => item.enemy.tags ?? []));
+
+  if (
+    hero.tags.includes("anti_heal") &&
+    ["healing", "high_sustain", "hp_shift", "low_hp_playstyle"].some((tag) => targetTags.has(tag))
+  ) {
+    return "Механика: анти-хил против восстановления и перекачки HP";
+  }
+
+  if (hero.tags.includes("break") && ["passive_reliant", "durable"].some((tag) => targetTags.has(tag))) {
+    return "Механика: break против пассивок и плотных героев";
+  }
+
+  if (hero.tags.includes("silence") && targetTags.has("mobility")) {
+    return "Механика: сайленс против мобильности";
+  }
+
+  return "";
+}
+
 function getConfidence(hero, counterSamples, synergySamples) {
   const sampleScore = counterSamples + synergySamples + Math.min(Number(hero.pickRate ?? 0) / 4, 4);
   if (sampleScore >= 7) return { label: "high", adjustment: 2 };
-  if (sampleScore >= 3) return { label: "medium", adjustment: 0 };
+  if (sampleScore >= 2.5) return { label: "medium", adjustment: 0 };
   return { label: "low", adjustment: -3 };
 }
 
