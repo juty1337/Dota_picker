@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { getRecommendations, getRoleLabel, getTeamSummary } from "./scoring.js";
+import heroesUrl from "../data/heroes.json?url";
+import draftDataUrl from "../data/draft-data.json?url";
 
 const STORAGE_KEY = "dota-picker-state-v2";
 const HERO_IMAGE_BASE = "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes";
@@ -74,8 +76,8 @@ export default function App() {
     async function loadData() {
       try {
         const [heroesResponse, draftResponse] = await Promise.all([
-          fetch("/data/heroes.json"),
-          fetch("/data/draft-data.json")
+          fetch(heroesUrl),
+          fetch(draftDataUrl)
         ]);
 
         if (!heroesResponse.ok || !draftResponse.ok) {

@@ -8,6 +8,8 @@ The project is built as a portfolio frontend app: the main focus is state
 management, data processing, recommendation scoring and a usable interface for
 manual draft analysis.
 
+**Live demo:** https://juty1337.github.io/Dota_picker/
+
 ## Features
 
 - Manual draft board for allies, enemies and bans.
@@ -47,6 +49,11 @@ Build:
 npm run build
 ```
 
+## Deploy
+
+Every push to `main` builds the app and publishes it to GitHub Pages via
+`.github/workflows/deploy.yml`.
+
 ## Update Data
 
 ```bash
@@ -74,4 +81,3 @@ calculated from several parts:
 - Add optional Dota 2 Game State Integration receiver.
 - Add personal hero pool and rank filters.
 - Add tests for scoring logic.
-- Deploy a public demo build.

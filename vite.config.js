@@ -1,6 +1,7 @@
 const externalNodeModules = process.env.DOTA_PICKER_NODE_MODULES;
 
 export default {
+  base: "./",
   esbuild: {
     jsx: "automatic"
   },
